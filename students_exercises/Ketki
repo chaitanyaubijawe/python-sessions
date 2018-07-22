@@ -1,0 +1,15 @@
+def dbInsert():
+	myfile = open("names.csv")
+	row_content = myfile.read()
+	print((row_content))
+	rows = row_content.splitlines()
+	print(rows)
+	for r in rows:		
+	#	#'''INSERT INTO user(id,name) values (1,nimesh) '''
+	#	#data = var.split(",")
+		print(r)
+		data = r.split(",")
+		query = "INSERT INTO user(id,name) values ( " + str(data[0]) + ",'"+ data[1]+"');"
+		print(query)
+
+dbInsert()

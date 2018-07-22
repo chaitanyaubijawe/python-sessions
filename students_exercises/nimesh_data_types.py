@@ -50,3 +50,4 @@ def print_world_map():
 	return
 print(print_world_map())
 
+print("hello")
